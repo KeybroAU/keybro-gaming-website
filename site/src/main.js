@@ -29,3 +29,27 @@ if (toggle && nav) {
     if (event.key === "Escape") setOpen(false);
   });
 }
+
+document.querySelectorAll(".copy-ip").forEach((button) => {
+  const label = button.textContent;
+  button.addEventListener("click", async () => {
+    const value = button.getAttribute("data-copy") || "";
+    try {
+      await navigator.clipboard.writeText(value);
+      button.textContent = "Copied";
+    } catch {
+      const code = document.getElementById("server-ip");
+      if (code) {
+        const range = document.createRange();
+        range.selectNodeContents(code);
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+      }
+      button.textContent = "Selected";
+    }
+    window.setTimeout(() => {
+      button.textContent = label;
+    }, 1600);
+  });
+});

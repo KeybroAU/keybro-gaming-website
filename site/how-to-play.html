@@ -6,7 +6,7 @@
     <title>How to play — Keybro Gaming</title>
     <meta
       name="description"
-      content="Placeholder guide for joining Keybro Gaming servers. Server list, rules, getting started, and common questions are not live yet."
+      content="Join SandShack Hardcore Nasdara, then use the Terje Medicine and Base Building Plus guides."
     />
     <meta name="theme-color" content="#12140f" />
     <link rel="icon" href="/keybro-logo.png" type="image/png" />
@@ -20,37 +20,340 @@
         <p class="eyebrow">Field manual · 02</p>
         <h1>How to play</h1>
         <p class="lede">
-          This is the join guide for Keybro Gaming. Every section below is a
-          placeholder. Real server names, connection details, mods, and rules
-          are not filled in yet — nothing on this page is a live server.
+          The server address, the medicine guide, and the building recipes
+          below are live. Rules, the first-steps checklist, and common
+          questions are still placeholders.
         </p>
       </header>
 
       <section class="manual" aria-labelledby="server-list">
-        <p class="stamp">Placeholder</p>
-        <h2 id="server-list">Server list</h2>
+        <h2 id="server-list">Server</h2>
+        <p>This is the live server. Copy the address into the DayZ launcher.</p>
+        <div class="server-card">
+          <p class="server-name">SandShack Hardcore Nasdara</p>
+          <p class="server-ip-row">
+            <code id="server-ip">103.62.51.132:5332</code>
+            <button type="button" class="copy-ip" data-copy="103.62.51.132:5332">
+              Copy address
+            </button>
+          </p>
+        </div>
+      </section>
+
+      <section class="manual" aria-labelledby="medicine">
+        <h2 id="medicine">Terje Medicine</h2>
         <p>
-          Drop the real servers in here later: name, map, and how to connect.
-          The row below is an empty slot, not a server.
+          SandShack runs Terje Medicine. Illness and injury move through
+          stages, and the dose has to match the problem. A stronger medicine
+          covers a weaker stage. Watch the condition instead of waiting until
+          you are already down.
         </p>
-        <div class="table-wrap">
-          <table>
-            <caption>Placeholder server list — not live</caption>
-            <thead>
-              <tr>
-                <th scope="col">Name</th>
-                <th scope="col">Map</th>
-                <th scope="col">How to connect</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Not set</td>
-                <td>Not set</td>
-                <td>Not set</td>
-              </tr>
-            </tbody>
-          </table>
+        <p>
+          <a
+            class="wiki-link"
+            href="https://github.com/TerjeBruoygard/TerjeMods/blob/master/WIKI/en/Medicine/README.md"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Terje Medicine wiki</a
+          >
+          has the full item tables, timers, and overdose values. This is the
+          field version.
+        </p>
+
+        <h3>How you take it</h3>
+        <ul class="guide-list">
+          <li>Tablets are for an early illness and for staying ahead of one. A pack holds ten, and packs of the same tablet combine.</li>
+          <li>Ampoules are the strong dose once a sickness has taken hold. You need a syringe. After the shot it is dirty: disinfect it with alcohol, or boil it in a pot over a fire, before you use it again.</li>
+          <li>Injectors are that same kind of dose in a one-use device. No syringe.</li>
+        </ul>
+
+        <h3>Clean hands, clean tools</h3>
+        <p>
+          Disinfect your hands and any medical gear before you work on a wound.
+          Alcohol tincture and disinfectant spray are the kit for that. Dirty
+          hands on an open wound are how a cut becomes sepsis. After surgery,
+          keep the sutures clean the same way.
+        </p>
+
+        <h3>Vaccines</h3>
+        <p>
+          Take a vaccine before you are sick. It cuts the chance of that
+          disease and it wears off, so you take it again later. Vaxicam covers
+          a cold, Zerivax the zombie virus, and Rabivax rabies.
+        </p>
+
+        <h3>Wounds</h3>
+        <ul class="guide-list">
+          <li>A stab or a bullet needs a bandage immediately. A hemostatic bandage beats rags. The wound can keep weeping until surgery takes the bullet or the blade out. A field surgical kit, an IFAK, or an AFAK does that job. Organ damage is the same work, only harder.</li>
+          <li>A vest can stop the round and still leave a bruise. Bruises from zombies and blunt hits pile up and start costing health. They fade on their own. Viprosal, Capsicum, or Finalgon speeds that up.</li>
+          <li>A hard hit to the head, a nearby blast, or a round caught by a helmet can concuss you: headache, dizziness, bad balance, blurred sight. It fades. Noopept or Neirox shortens it.</li>
+          <li>Vikasol tablets and the Erytromixelin injector slow bleeding so you have time to bandage. Irovit, magnesium sulfate, and erythropoietin rebuild blood after you have already lost it.</li>
+        </ul>
+
+        <h3>Illness</h3>
+        <ul class="guide-list">
+          <li>Cold comes from staying cold. Rest somewhere warm and a mild cold can pass. Leave it and it becomes pneumonia, and your health starts to drop. Use an antibiotic at least as strong as the stage you are in, and expect more than one dose.</li>
+          <li>Bad food, rotten fruit, the wrong mushroom, dirty water, or a mouthful of gasoline is food poisoning. Nausea hits fast, then dehydration. Drink water. Charcoal is the light dose. Stronger antipoison meds if it is already bad.</li>
+          <li>Toxic gas is chemical poisoning: a cough, then vomiting, then it can kill you. Take an antidote, such as the AntiChem injector.</li>
+          <li>The zombie virus travels in the air and in fluids. A fight is a small chance. A wound from the infected is a much bigger one. A mask and armor lower the odds. You have a long window, more than an hour, to find Zivirol before the last stage crashes your health.</li>
+          <li>Sepsis is an infected open wound. Health slips away until you use a strong antibiotic.</li>
+          <li>Rabies comes from bites, wolves included. It starts quiet: a temperature and a weakness you can miss. Next you cannot keep food or water down. Then it kills you. Treat it early, or take Rabivax before you are bitten.</li>
+        </ul>
+
+        <h3>Pain and too many pills</h3>
+        <p>
+          Pain eases by itself. A painkiller of the right strength, or stronger,
+          cuts it short. Medicines also fill an overdose meter. Stage one is
+          nausea and hallucinations. Stage two can knock you out. Stage three
+          threatens your life. It fades as the drugs leave your system. Water
+          is the light treatment for the first stage. Do not take a second dose
+          because the first one felt slow.
+        </p>
+
+        <h3>Sleep</h3>
+        <p>
+          You have to sleep, the same way you have to eat and drink. Yellow on
+          the sleep meter means yawning and fading sight. Red means you can
+          pass out. Sleep warm: a fire, a house, a tent, or a sleeping bag. You
+          cannot sleep if you are freezing, starving, or carrying a stage-two
+          illness. Sleep restores health and blood, and a light cold can break
+          while you rest. Energy drinks buy the meter back when you cannot lie
+          down.
+        </p>
+
+        <h3>Mind</h3>
+        <p>
+          Zombie attacks, psi zones, and human meat wear the mind down into
+          panic and hallucinations. Antidepressants steady it. A psi zone is
+          worse the closer you stand to the middle. If the mind hits the
+          bottom, the character can do something fatal. A PSI helmet is the
+          gear built for those zones. Take an antidepressant before you walk
+          in.
+        </p>
+      </section>
+
+      <section class="manual" aria-labelledby="building">
+        <h2 id="building">Base Building Plus</h2>
+        <p>
+          Most pieces start as a frame. Wood or planks go on that frame. Metal
+          sheet needs the wood tier already finished. Concrete is bricks and a
+          mortar mix, and you have to be holding a shovel or a pickaxe. The
+          small half-wall is the exception: one concrete brick and the tool, no
+          mortar.
+        </p>
+        <p>
+          Counts below are what you add at that step, not a running total,
+          unless the line says otherwise. The
+          <a
+            class="wiki-link"
+            href="https://basebuildingplus.fandom.com/wiki/Building_Recipes"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Base Building Plus recipe wiki</a
+          >
+          is the full list this section is drawn from.
+        </p>
+
+        <h3>Bench and kits</h3>
+        <ul class="recipe">
+          <li><span>Workbench</span> 5 planks and the BBP book. The book comes back.</li>
+          <li><span>Step ladder kit</span> 10 planks and 10 nails.</li>
+          <li><span>Part kits</span> Crafted in the workbench: 3 planks and 3 nails.</li>
+        </ul>
+
+        <div class="faq">
+          <details>
+            <summary>Large wall</summary>
+            <ul class="recipe">
+              <li><span>Frame</span> 10 nails and 5 planks.</li>
+              <li><span>Wood</span> Frame, then 10 nails and 2 logs.</li>
+              <li><span>Planks</span> Frame, then 10 nails and 6 planks.</li>
+              <li><span>Metal</span> After the wood tier: 4 sheet metal and 10 nails.</li>
+              <li><span>Concrete</span> Frame, then 3 concrete bricks, 1 mortar mix, shovel or pickaxe.</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Small wall and large half-wall</summary>
+            <ul class="recipe">
+              <li><span>Frame</span> 10 nails and 3 planks.</li>
+              <li><span>Wood</span> Frame, then 10 nails and 1 log.</li>
+              <li><span>Planks</span> Frame, then 10 nails and 3 planks.</li>
+              <li><span>Metal</span> After the wood tier: 2 sheet metal and 10 nails.</li>
+              <li><span>Concrete</span> Frame, then 2 concrete bricks, 1 mortar mix, shovel or pickaxe.</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Small half-wall</summary>
+            <ul class="recipe">
+              <li><span>Frame</span> 5 nails and 2 planks.</li>
+              <li><span>Wood</span> Frame, then 10 nails and 1 log.</li>
+              <li><span>Planks</span> Frame, then 10 nails and 2 planks.</li>
+              <li><span>Metal</span> After the wood tier: 1 sheet metal and 5 nails.</li>
+              <li><span>Concrete</span> Frame, then 1 concrete brick, shovel or pickaxe. No mortar.</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Large door</summary>
+            <ul class="recipe">
+              <li><span>Frame</span> 10 nails and 5 planks.</li>
+              <li><span>Wood</span> Frame, then 10 nails and 2 logs.</li>
+              <li><span>Planks</span> Frame, then 10 nails and 5 planks.</li>
+              <li><span>Metal</span> After the wood tier: 3 sheet metal and 10 nails.</li>
+              <li><span>Concrete</span> Frame, then 3 concrete bricks, 1 mortar mix, shovel or pickaxe.</li>
+              <li><span>Wood door</span> Frame, then 10 nails and 5 planks.</li>
+              <li><span>Metal door</span> After the wood door: 15 nails and 5 sheet metal.</li>
+              <li><span>Concrete door</span> Frame, then 15 nails, 5 sheet metal, and 5 planks. You cannot build this if a wood or metal door is already on the frame.</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Small door</summary>
+            <ul class="recipe">
+              <li><span>Frame</span> 10 nails and 3 planks.</li>
+              <li><span>Wood</span> Frame, then 10 nails and 2 logs.</li>
+              <li><span>Planks</span> Frame, then 10 nails and 5 planks.</li>
+              <li><span>Metal</span> After the wood tier: 2 sheet metal and 4 nails.</li>
+              <li><span>Concrete</span> Frame, then 1 concrete brick, 1 mortar mix, shovel or pickaxe.</li>
+              <li><span>Wood door</span> Frame, then 10 nails and 5 planks.</li>
+              <li><span>Metal door</span> After the wood door: 15 nails and 5 sheet metal.</li>
+              <li><span>Concrete door</span> Frame, then 15 nails, 5 sheet metal, and 5 planks. You cannot build this if a wood or metal door is already on the frame.</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Large slope wall</summary>
+            <p>Left and right use the same costs.</p>
+            <ul class="recipe">
+              <li><span>Frame</span> 10 nails and 5 planks.</li>
+              <li><span>Wood</span> Frame, then 10 nails and 2 logs.</li>
+              <li><span>Planks</span> Frame, then 10 nails and 5 planks.</li>
+              <li><span>Metal</span> After the wood tier: 3 sheet metal and 10 nails.</li>
+              <li><span>Concrete</span> Frame, then 2 concrete bricks, 1 mortar mix, shovel or pickaxe.</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Large floor and slope roof</summary>
+            <ul class="recipe">
+              <li><span>Frame</span> 10 nails and 5 planks.</li>
+              <li><span>Wood</span> Frame, then 10 nails and 8 planks.</li>
+              <li><span>Metal</span> After the wood tier: 3 sheet metal and 10 nails.</li>
+              <li><span>Concrete</span> Frame, then 2 concrete bricks, 1 mortar mix, shovel or pickaxe.</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Small floor and roof</summary>
+            <ul class="recipe">
+              <li><span>Frame</span> 5 nails and 3 planks.</li>
+              <li><span>Wood</span> Frame, then 5 nails and 3 planks.</li>
+              <li><span>Metal</span> After the wood tier: 1 sheet metal and 5 nails.</li>
+              <li><span>Concrete</span> Frame, then 2 concrete bricks, 1 mortar mix, shovel or pickaxe.</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Hangar roof and large gate</summary>
+            <p>Left and right use the same costs. The upgrades match. Only the frame differs.</p>
+            <ul class="recipe">
+              <li><span>Frame</span> 10 nails and 5 planks for the roof, 10 nails and 4 planks for the gate.</li>
+              <li><span>Wood</span> Frame, then 24 nails and 16 planks.</li>
+              <li><span>Metal</span> After the wood tier: 4 sheet metal and 20 nails.</li>
+              <li><span>Concrete</span> Frame, then 3 concrete bricks, 1 mortar mix, shovel or pickaxe.</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Triangle floor and roof</summary>
+            <ul class="recipe">
+              <li><span>Frame</span> 10 nails and 3 planks.</li>
+              <li><span>Wood</span> Frame, then 10 nails and 5 planks.</li>
+              <li><span>Metal</span> After the wood tier: 2 sheet metal and 10 nails.</li>
+              <li><span>Concrete</span> Frame, then 1 concrete brick, 1 mortar mix, shovel or pickaxe.</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Floor hatch</summary>
+            <ul class="recipe">
+              <li><span>Frame</span> 10 nails and 5 planks.</li>
+              <li><span>Wood</span> Frame, then 10 nails and 6 planks.</li>
+              <li><span>Metal</span> After the wood tier: 3 sheet metal and 10 nails.</li>
+              <li><span>Concrete</span> Frame, then 2 concrete bricks, 1 mortar mix, shovel or pickaxe.</li>
+              <li><span>Stair</span> 5 planks and 10 nails.</li>
+              <li><span>Wood hatch</span> Frame, then 10 nails and 5 planks.</li>
+              <li><span>Metal hatch</span> After the wood hatch: 10 nails and 4 sheet metal.</li>
+              <li><span>Reinforced hatch</span> Frame, then 5 planks, 4 sheet metal, and 20 nails.</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Foundation</summary>
+            <p>The triangle foundation uses the same costs.</p>
+            <ul class="recipe">
+              <li><span>Frame</span> 10 nails and 2 logs.</li>
+              <li><span>Wood floor</span> Frame, then 10 nails and 8 planks.</li>
+              <li><span>Metal floor</span> After the wood floor: 3 sheet metal and 10 nails.</li>
+              <li><span>Concrete</span> Frame, then 2 concrete bricks, 1 mortar mix, shovel or pickaxe.</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Double garage door</summary>
+            <ul class="recipe">
+              <li><span>Frame</span> 10 nails and 4 planks.</li>
+              <li><span>Wood doors</span> Both leaves: frame, then 12 nails and 8 planks.</li>
+              <li><span>Metal doors</span> After the wood doors: 10 nails and 2 sheet metal for the pair.</li>
+              <li><span>Concrete</span> Both leaves: frame, then 1 concrete brick, 1 mortar mix, shovel or pickaxe.</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Single garage door</summary>
+            <ul class="recipe">
+              <li><span>Frame</span> 10 nails and 4 planks.</li>
+              <li><span>Wood</span> Frame, then 24 nails and 16 planks.</li>
+              <li><span>Metal</span> After the wood tier: 4 sheet metal and 20 nails.</li>
+              <li><span>Concrete</span> Frame, then 3 concrete bricks, 1 mortar mix, shovel or pickaxe.</li>
+              <li><span>Take apart</span> The frame returns 8 nails, 3 planks, and the kit. Concrete returns 2 bricks and 1 mortar mix. The wiki does not list a return for the wood or metal tiers.</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Large window</summary>
+            <ul class="recipe">
+              <li><span>Frame</span> 10 nails and 5 planks.</li>
+              <li><span>Logs</span> Frame, then 10 nails and 2 logs.</li>
+              <li><span>Planks</span> Frame, then 10 nails and 8 planks.</li>
+              <li><span>Metal</span> After the wood tier: 4 sheet metal and 10 nails.</li>
+              <li><span>Concrete</span> Frame, then 3 concrete bricks, 1 mortar mix, shovel or pickaxe.</li>
+              <li><span>Wood hatch</span> Frame, then 5 nails and 2 planks.</li>
+              <li><span>Metal hatch</span> After the wood hatch: 5 nails and 2 sheet metal.</li>
+              <li><span>Reinforced hatch</span> Frame, then 5 planks, 3 sheet metal, and 10 nails.</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Small window</summary>
+            <p>The wiki does not list a separate frame cost. These tiers assume the frame is already up.</p>
+            <ul class="recipe">
+              <li><span>Logs</span> 10 nails and 1 log.</li>
+              <li><span>Planks</span> 10 nails and 3 planks.</li>
+              <li><span>Metal</span> After the wood tier: 2 sheet metal and 10 nails.</li>
+              <li><span>Concrete</span> 1 concrete brick, 1 mortar mix, shovel or pickaxe.</li>
+              <li><span>Wood hatch</span> 5 nails and 2 planks.</li>
+              <li><span>Metal hatch</span> After the wood hatch: 5 nails and 2 sheet metal.</li>
+              <li><span>Reinforced hatch</span> 5 planks, 2 sheet metal, and 5 nails.</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Fences, mesh, and metal stairs</summary>
+            <ul class="recipe">
+              <li><span>Barbed barrier</span> Frame is 10 nails and 2 logs. The wire is 10 nails and 1 barbed wire.</li>
+              <li><span>Chain fence</span> Frame is 10 nails and 2 sheet metal. The fence tier is another 10 nails and 2 sheet metal. Wire is 10 nails and 1 barbed wire.</li>
+              <li><span>Chain gate</span> Frame is 10 nails and 2 sheet metal. Both gate leaves are 10 nails and 1 sheet metal. Wire is 10 nails and 1 barbed wire.</li>
+              <li><span>Floor mesh</span> Frame is 10 nails and 1 sheet metal. The mesh floor is 10 nails and 2 sheet metal.</li>
+              <li><span>Metal stairs</span> The stair is 10 nails and 1 sheet metal. Both railings are 3 nails and 1 sheet metal.</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Pillars, stairs, and ramp</summary>
+            <ul class="recipe">
+              <li><span>Tall pillar</span> Wood is 5 nails and 2 planks. Concrete is 1 brick.</li>
+              <li><span>Short pillar</span> Wood is 5 nails and 1 plank. Concrete is 1 brick.</li>
+              <li><span>Large stair</span> 10 nails and 5 planks.</li>
+              <li><span>Small stair</span> 5 nails and 5 planks.</li>
+              <li><span>Large ramp</span> 15 nails and 8 planks.</li>
+            </ul>
+          </details>
         </div>
       </section>
 
