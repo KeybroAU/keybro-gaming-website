@@ -665,6 +665,22 @@ td {
   font-size: 1.35rem;
 }
 
+.footer-url {
+  margin-top: 0.35rem;
+}
+
+.footer-url a {
+  font-family: var(--cond);
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--brass);
+  text-decoration: none;
+}
+
+.footer-url a:hover {
+  color: var(--ink);
+}
+
 .footer-nav {
   display: flex;
   flex-wrap: wrap;

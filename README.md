@@ -19,7 +19,7 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:5173
+Open http://localhost:5173 for local work. The public address is https://keybrogaming.com.
 
 ## Build
 
@@ -32,6 +32,18 @@ npm run preview
 ```
 
 `npm run build` writes the static site to `site/dist/`. `npm run preview` serves that folder locally.
+
+## Domain
+
+The canonical URL is [https://keybrogaming.com](https://keybrogaming.com). The site that hostname should serve is this repo’s `site/dist/` output, from [KeybroAU/keybro-gaming-website](https://github.com/KeybroAU/keybro-gaming-website) `main`:
+
+- https://keybrogaming.com/
+- https://keybrogaming.com/how-to-play.html
+- https://keybrogaming.com/crew.html
+- https://keybrogaming.com/discord.html
+- https://keybrogaming.com/buy-me-a-beer.html
+
+Each page sets that URL as its canonical link and Open Graph URL. This repo has no host or DNS config, and the domain is not deployed from here. Point keybrogaming.com at a static host for `site/dist/` when you are ready.
 
 ## Placeholders that still need real content
 
