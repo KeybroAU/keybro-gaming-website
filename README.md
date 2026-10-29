@@ -35,10 +35,11 @@ npm run preview
 
 ## Placeholders that still need real content
 
-Nothing below is live. Do not treat it as server policy or a working invite.
+Nothing below is live. Do not treat it as server policy.
 
-- **Discord invite.** Discord links to `https://discord.gg/keybro-placeholder`. The real invite still needs to be set.
 - **Server details.** How to play is marked placeholder: server list, rules, getting started, and common questions. No real addresses, mods, or rules are listed.
 - **Bios.** Crew bios for Keybro and the open crew slots are placeholders.
+
+Discord links out to [https://discord.gg/nJQcJ5FJhn](https://discord.gg/nJQcJ5FJhn) and opens in a new tab.
 
 Buy me a beer links out to [https://buymeacoffee.com/keybro](https://buymeacoffee.com/keybro). That page explains the donation supports Keybro Gaming. No payment keys are stored in this repo.
