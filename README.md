@@ -35,15 +35,39 @@ npm run preview
 
 ## Domain
 
-The canonical URL is [https://keybrogaming.com](https://keybrogaming.com). The site that hostname should serve is this repo’s `site/dist/` output, from [KeybroAU/keybro-gaming-website](https://github.com/KeybroAU/keybro-gaming-website) `main`:
+The canonical URL is [https://keybrogaming.com](https://keybrogaming.com). GitHub Pages builds `site/` from [KeybroAU/keybro-gaming-website](https://github.com/KeybroAU/keybro-gaming-website) `main` and publishes `site/dist/`. The Pages custom domain is `keybrogaming.com`. `www.keybrogaming.com` is the recommended alias: once its DNS record exists, GitHub redirects it to the apex.
+
+Pages settings: https://github.com/KeybroAU/keybro-gaming-website/settings/pages
+
+This repo cannot change the DNS registrar. Add these records at the registrar. GitHub’s current Pages addresses are documented at https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site. Do not use a wildcard such as `*.keybrogaming.com`.
+
+Apex `keybrogaming.com` — four `A` records and four `AAAA` records, all named `@`:
+
+| Type | Name | Value |
+| --- | --- | --- |
+| A | `@` | `185.199.108.153` |
+| A | `@` | `185.199.109.153` |
+| A | `@` | `185.199.110.153` |
+| A | `@` | `185.199.111.153` |
+| AAAA | `@` | `2606:50c0:8000::153` |
+| AAAA | `@` | `2606:50c0:8001::153` |
+| AAAA | `@` | `2606:50c0:8002::153` |
+| AAAA | `@` | `2606:50c0:8003::153` |
+
+If the registrar supports `ALIAS` or `ANAME` instead of `A`/`AAAA`, one record named `@` pointing at `KeybroAU.github.io` can replace that list. Remove any old apex `A`, `AAAA`, or `CNAME` records that conflict.
+
+`www` — one `CNAME`. Point it at the user site, not at the repository path and not at the apex:
+
+| Type | Name | Value |
+| --- | --- | --- |
+| CNAME | `www` | `KeybroAU.github.io` |
+
+After the records propagate (GitHub says this can take up to 24 hours), open:
 
 - https://keybrogaming.com/
-- https://keybrogaming.com/how-to-play.html
-- https://keybrogaming.com/crew.html
-- https://keybrogaming.com/discord.html
-- https://keybrogaming.com/buy-me-a-beer.html
+- https://www.keybrogaming.com/ (should redirect to the apex)
 
-Each page sets that URL as its canonical link and Open Graph URL. This repo has no host or DNS config, and the domain is not deployed from here. Point keybrogaming.com at a static host for `site/dist/` when you are ready.
+Until those records exist, the Pages deploy is only on the `github.io` host. Enforce HTTPS in the Pages settings after the certificate is issued.
 
 ## Placeholders that still need real content
 
