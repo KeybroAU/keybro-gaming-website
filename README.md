@@ -12,7 +12,7 @@ The look is a field manual: olive, khaki, and stencil type. Pages:
 
 ## Run the site
 
-From `site/`:
+From the repository root:
 
 ```bash
 npm install
@@ -23,7 +23,7 @@ Open http://localhost:5173 for local work. The public address is https://keybrog
 
 ## Build
 
-From `site/`:
+From the repository root:
 
 ```bash
 npm install
@@ -31,25 +31,26 @@ npm run build
 npm run preview
 ```
 
-`npm run build` writes the static site to `site/dist/`. `npm start` serves that folder on `PORT` (or 4173). `npm run preview` is the Vite preview server for local checks.
+`npm run build` writes the static site to `dist/`. `npm start` serves that folder on `0.0.0.0` and `PORT` (or 4173). `npm run preview` is the Vite preview server for local checks.
 
 ## cPanel
 
-Streamline looks at `site/` for the Node app. Use Node 22.
+Streamline (au.web.sline.gg) hosts the Node app from the repository root. Leave the application path blank. Use Node 22 and npm. No database and no environment variables are required. cPanel sets `PORT` when it starts the app.
 
 | Field | Value |
 | --- | --- |
-| Application path | `site` |
+| Application path | *(blank — repository root)* |
 | Node version | `22` |
+| Package manager | `npm` |
 | Build command | `npm run build` |
 | Startup command | `npm start` |
 | Output directory | `dist` |
 
-`npm start` runs `node server.mjs`, which serves `site/dist` on `process.env.PORT`. Run `npm install` in `site/` before the build so Vite is installed. Vite is a production dependency because the build has to run on the host.
+`npm start` runs `node server.mjs`, which serves `dist/` on `0.0.0.0` and `process.env.PORT`. Vite is a production dependency because the build runs on the host.
 
 ## Domain
 
-The canonical URL is [https://keybrogaming.com](https://keybrogaming.com). GitHub Pages builds `site/` from [KeybroAU/keybro-gaming-website](https://github.com/KeybroAU/keybro-gaming-website) `main` and publishes `site/dist/`. The Pages custom domain is `keybrogaming.com`. `www.keybrogaming.com` is the recommended alias: once its DNS record exists, GitHub redirects it to the apex.
+The canonical URL is [https://keybrogaming.com](https://keybrogaming.com). GitHub Pages builds the repository root from [KeybroAU/keybro-gaming-website](https://github.com/KeybroAU/keybro-gaming-website) `main` and publishes `dist/`. The Pages custom domain is `keybrogaming.com`. `www.keybrogaming.com` is the recommended alias: once its DNS record exists, GitHub redirects it to the apex.
 
 Pages settings: https://github.com/KeybroAU/keybro-gaming-website/settings/pages
 
