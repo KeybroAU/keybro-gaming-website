@@ -31,7 +31,21 @@ npm run build
 npm run preview
 ```
 
-`npm run build` writes the static site to `site/dist/`. `npm run preview` serves that folder locally.
+`npm run build` writes the static site to `site/dist/`. `npm start` serves that folder on `PORT` (or 4173). `npm run preview` is the Vite preview server for local checks.
+
+## cPanel
+
+Streamline looks at `site/` for the Node app. Use Node 22.
+
+| Field | Value |
+| --- | --- |
+| Application path | `site` |
+| Node version | `22` |
+| Build command | `npm run build` |
+| Startup command | `npm start` |
+| Output directory | `dist` |
+
+`npm start` runs `node server.mjs`, which serves `site/dist` on `process.env.PORT`. Run `npm install` in `site/` before the build so Vite is installed. Vite is a production dependency because the build has to run on the host.
 
 ## Domain
 
