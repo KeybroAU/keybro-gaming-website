@@ -496,17 +496,29 @@ td {
   gap: 0.85rem;
 }
 
-.person.lead {
-  grid-column: 1 / -1;
+.person.lead,
+.person.with-portrait {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
   gap: 1.1rem 1.35rem;
   align-items: center;
 }
 
+.person.lead {
+  grid-column: 1 / -1;
+}
+
 .person img {
   width: 112px;
   height: 112px;
+}
+
+.person.with-portrait img {
+  width: 132px;
+  height: 132px;
+  border-radius: 0;
+  object-fit: contain;
+  background: transparent;
 }
 
 .role {
@@ -736,12 +748,14 @@ td {
 
   .cover,
   .person.lead,
+  .person.with-portrait,
   .routes,
   .roster {
     grid-template-columns: 1fr;
   }
 
-  .person.lead {
+  .person.lead,
+  .person.with-portrait {
     justify-items: start;
   }
 
