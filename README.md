@@ -89,7 +89,6 @@ Until those records exist, the Pages deploy is only on the `github.io` host. Enf
 Do not treat a placeholder section as server policy.
 
 - **Common questions.** That section on How to play is still an empty placeholder.
-- **Bios.** Keybro’s bio is still a placeholder. Kiwigreen, KiwiKurt, Rambo, and Mick Dundee are on the Crew page.
 
 How to play lists the live server, SandShack Hardcore Nasdara at `103.1.213.66:5332`, the server rules, the Welcome to Nasdara steps, plus player guides for Terje Medicine and Base Building Plus.
 
