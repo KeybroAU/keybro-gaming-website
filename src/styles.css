@@ -568,6 +568,19 @@ td {
   margin: 1.2rem 0 0.4rem;
 }
 
+.manual h3.with-emblem {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.manual h3.with-emblem img {
+  width: 2.6rem;
+  height: 2.6rem;
+  flex: 0 0 auto;
+  object-fit: contain;
+}
+
 .server-card {
   margin-top: 1rem;
   padding: 1rem;
